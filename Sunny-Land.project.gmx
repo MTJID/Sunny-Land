@@ -8,15 +8,22 @@
     <sound>sound\o_Level1Music</sound>
     <sound>sound\snd_Jump</sound>
     <sound>sound\snd_Walk</sound>
+    <sound>sound\snd_Pickup</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_Player</sprite>
     <sprite>sprites\s_PlayerR</sprite>
     <sprite>sprites\s_PlayerA</sprite>
     <sprite>sprites\s_PlayerC</sprite>
+    <sprite>sprites\s_PlayerL</sprite>
     <sprite>sprites\s_Wall</sprite>
-    <sprite>sprites\s_Checkpoint</sprite>
     <sprite>sprites\s_PickupItem</sprite>
+    <sprite>sprites\s_Portal</sprite>
+    <sprite>sprites\s_Checkpoint</sprite>
+    <sprite>sprites\s_Death</sprite>
+    <sprite>sprites\s_Enemy</sprite>
+    <sprite>sprites\s_EnemyM</sprite>
+    <sprite>sprites\s_Ladder</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Sunny_Land_Tileset</background>
@@ -30,9 +37,14 @@
     <object>objects\o_Player</object>
     <object>objects\o_Wall</object>
     <object>objects\o_Jukebox</object>
-    <object>objects\o_Checkpoint</object>
     <object>objects\o_PickupItem</object>
     <object>objects\o_Control</object>
+    <object>objects\o_Portal</object>
+    <object>objects\o_Checkpoint</object>
+    <object>objects\o_Death</object>
+    <object>objects\o_Enemy</object>
+    <object>objects\o_EnemyStanding</object>
+    <object>objects\o_Ladder</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initialize</room>

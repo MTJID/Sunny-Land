@@ -39,8 +39,7 @@ walkSpeed = 4; //Movement Speed
 jumpSpeed = 7; //Jump Speed
 jumps = 0; //How many jumps
 jumpsmax = 2; //Maximum jumps
-//wallJumps = 0;
-//maxWallJumps = 3;
+ladder = false;
 
 if (global.checkpointR == room)
 {
@@ -76,10 +75,13 @@ if (global.checkpointR == room)
 */
 
 //Keyboard Key Checks
-key_left = keyboard_check(vk_left) || keyboard_check(ord('A'));
-key_right = keyboard_check(vk_right) || keyboard_check(ord('D'));
+key_up = keyboard_check(vk_up) || (gamepad_button_check(0,gp_padu));
+key_down = keyboard_check(vk_down) || (gamepad_button_check(0,gp_padd));
+key_left = keyboard_check(vk_left) || keyboard_check(ord('A')) || (gamepad_button_check(0,gp_padl));
+key_right = keyboard_check(vk_right) || keyboard_check(ord('D')) || (gamepad_button_check(0,gp_padr));
 key_crouch = keyboard_check(vk_down);
-key_jump = keyboard_check_pressed(vk_space);
+key_jump = keyboard_check_pressed(vk_space) || (gamepad_button_check_pressed(0,gp_face1));
+key_debugReset = keyboard_check_pressed(ord('R')) || gamepad_button_check_pressed(0,gp_shoulderl);
 
 //Variables
 var move = key_right - key_left;
@@ -104,6 +106,21 @@ if (key_jump) &amp;&amp; (place_meeting(x+1,y,o_Wall))
 {
     vSpeed = -jumpSpeed
     //audio_play_sound(snd_Jump,10,false);
+}
+
+//Ladder Climbing
+if (key_up) || (key_down)
+{
+    if (place_meeting(x,y,o_Ladder)) ladder = true;
+}
+
+if (ladder)
+{
+    vSpeed = 0;
+    if (key_up) vSpeed = -2;
+    if (key_down) vSpeed = 2;
+    if (place_meeting(x,y,o_Ladder)) ladder = false;
+    if (key_jump) ladder = false;
 }
 
 if (key_jump) &amp;&amp; (place_meeting(x-1,y,o_Wall))
@@ -156,7 +173,66 @@ else
     }
 }
 
+if (key_up)
+{
+    image_speed = 1;
+    if(place_meeting(x,y,o_Ladder))
+    {
+        sprite_index = s_PlayerL;
+    }
+}
+
 if (hSpeed != 0) image_xscale = sign(hSpeed); //Flip the player according to the direction
+
+//Gamepad Debug Resetting
+if (key_debugReset)
+{
+    game_restart();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>game_restart();
 </string>
           </argument>
         </arguments>
@@ -179,7 +255,7 @@ if (hSpeed != 0) image_xscale = sign(hSpeed); //Flip the player according to the
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_restart();
+            <string>game_restart();
 </string>
           </argument>
         </arguments>

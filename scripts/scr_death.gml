@@ -1,6 +1,6 @@
-if (global.checkpointR != 0)
+if (global.checkpointR != noone)
 {
-    room_goto(global_checkpointR)
+    room_goto(global.checkpointR);
 }
 else
 {
