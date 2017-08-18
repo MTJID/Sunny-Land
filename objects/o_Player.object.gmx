@@ -255,7 +255,7 @@ if (key_debugReset)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart();
+            <string>room_restart();
 </string>
           </argument>
         </arguments>

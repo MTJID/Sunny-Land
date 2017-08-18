@@ -11,19 +11,30 @@
     <sound>sound\snd_Pickup</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\s_Player</sprite>
-    <sprite>sprites\s_PlayerR</sprite>
-    <sprite>sprites\s_PlayerA</sprite>
-    <sprite>sprites\s_PlayerC</sprite>
-    <sprite>sprites\s_PlayerL</sprite>
-    <sprite>sprites\s_Wall</sprite>
-    <sprite>sprites\s_PickupItem</sprite>
-    <sprite>sprites\s_Portal</sprite>
-    <sprite>sprites\s_Checkpoint</sprite>
-    <sprite>sprites\s_Death</sprite>
-    <sprite>sprites\s_Enemy</sprite>
-    <sprite>sprites\s_EnemyM</sprite>
-    <sprite>sprites\s_Ladder</sprite>
+    <sprites name="Player">
+      <sprite>sprites\s_PlayerA</sprite>
+      <sprite>sprites\s_Player</sprite>
+      <sprite>sprites\s_PlayerC</sprite>
+      <sprite>sprites\s_PlayerL</sprite>
+      <sprite>sprites\s_PlayerR</sprite>
+    </sprites>
+    <sprites name="Enemy">
+      <sprite>sprites\s_Enemy</sprite>
+      <sprite>sprites\s_EnemyM</sprite>
+      <sprite>sprites\s_EnemyDeath</sprite>
+    </sprites>
+    <sprites name="Environment">
+      <sprite>sprites\s_Wall</sprite>
+      <sprite>sprites\s_PickupItem</sprite>
+      <sprite>sprites\s_Ladder</sprite>
+    </sprites>
+    <sprites name="Misc">
+      <sprite>sprites\s_MenuButton</sprite>
+      <sprite>sprites\s_Death</sprite>
+      <sprite>sprites\s_Checkpoint</sprite>
+      <sprite>sprites\s_Portal</sprite>
+      <sprite>sprites\s_GameStart</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Sunny_Land_Tileset</background>
@@ -32,6 +43,9 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_death.gml</script>
+    <script>scripts\scr_exitGame.gml</script>
+    <script>scripts\scr_startGame.gml</script>
+    <script>scripts\scr_gameOptions.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\o_Player</object>
@@ -41,6 +55,7 @@
     <object>objects\o_Control</object>
     <object>objects\o_Portal</object>
     <object>objects\o_Checkpoint</object>
+    <object>objects\o_GameStart</object>
     <object>objects\o_Death</object>
     <object>objects\o_Enemy</object>
     <object>objects\o_EnemyStanding</object>

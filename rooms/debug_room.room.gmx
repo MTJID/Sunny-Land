@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="o_Player" x="64" y="96" name="inst_8AB56DD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_Player" x="16" y="144" name="inst_8AB56DD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_Wall" x="368" y="0" name="inst_A9BE8BF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_Wall" x="368" y="160" name="inst_10568A3D" locked="0" code="" scaleX="1" scaleY="-2" colour="4294967295" rotation="0"/>
     <instance objName="o_Wall" x="368" y="16" name="inst_B9FAB084" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -96,6 +96,10 @@
     <instance objName="o_Ladder" x="240" y="96" name="inst_54EA5227" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_Ladder" x="240" y="112" name="inst_30640137" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_EnemyStanding" x="320" y="144" name="inst_DDC68B42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_Checkpoint" x="192" y="144" name="inst_D334CE12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_Portal" x="272" y="128" name="inst_F5A7A8D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_Jukebox" x="64" y="16" name="inst_B8D18AE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_GameStart" x="16" y="144" name="inst_D85B2BB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Sunny_Land_Tileset" x="0" y="224" w="16" h="16" xo="48" yo="48" id="10000245" name="inst_C9189DA2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -132,7 +136,6 @@
     <tile bgName="Sunny_Land_Tileset" x="368" y="32" w="16" h="16" xo="32" yo="256" id="10000316" name="inst_25EA647F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Sunny_Land_Tileset" x="368" y="16" w="16" h="16" xo="32" yo="256" id="10000317" name="inst_26857760" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Sunny_Land_Tileset" x="368" y="0" w="16" h="16" xo="32" yo="256" id="10000318" name="inst_9BE0B79D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Sunny_Land_Tileset" x="80" y="240" w="16" h="16" xo="0" yo="0" id="10000321" name="inst_177F29D9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Sunny_Land_Tileset" x="320" y="64" w="16" h="16" xo="0" yo="0" id="10000322" name="inst_85716249" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Sunny_Land_Tileset" x="0" y="208" w="16" h="16" xo="48" yo="48" id="10000323" name="inst_9F8CD43A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Sunny_Land_Tileset" x="16" y="208" w="16" h="16" xo="48" yo="48" id="10000324" name="inst_030033F8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

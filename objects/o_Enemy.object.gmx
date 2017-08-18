@@ -95,6 +95,7 @@ if (place_meeting(x,y,o_Player))
     }
     else
     {
+        score -= 10;
         scr_death();
     }
 }

@@ -141,6 +141,8 @@
     <instance objName="o_Wall" x="32" y="-32" name="inst_86A91EB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_Wall" x="48" y="-32" name="inst_F4A22414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_Wall" x="64" y="-32" name="inst_986AB25B" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_EnemyStanding" x="272" y="112" name="inst_C2E9AAB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_Checkpoint" x="16" y="112" name="inst_F4684930" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Sunny_Land_Tileset" x="0" y="224" w="16" h="16" xo="48" yo="48" id="10000011" name="inst_B0469753" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
